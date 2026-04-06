@@ -1,0 +1,338 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    align-items: center;
+    /*color: rgb(101, 101, 101);*/
+}
+.header a{
+    color: #0f0f0f;
+}
+.logo a{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 20px;
+}
+.logo-icon{
+    background: linear-gradient(rgb(186,74,244), rgb(205, 79, 161));
+    padding: 10px;
+    border-radius: 50%;
+}
+.header-top .logo a .logo-tittle{
+    color: black;
+}
+.logo-tittle{
+        font-weight: 450;
+}
+nav ul{
+    display: flex;
+    column-gap: 30px;
+}
+nav ul li a:hover{
+    color: #b633db;
+}
+.header-top-button{
+    display: flex;
+    column-gap: 15px;
+}
+.header-top-button button{
+    border: none;
+    padding: 10px;
+    background: transparent;
+}
+.header-top-button button:hover{
+    background: lightgray;
+    border-radius: 10%;
+}
+.header-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 130px 0;
+    color: #ffffff;
+    background: linear-gradient(135deg,#9b19f6, #f5339c, #ff8331);
+    row-gap: 20px;
+}
+.header-bottom h1{
+    font-size: 60px;
+    font-weight: 550;
+    width: 770px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.header-bottom p{
+    font-size: 20px;
+    width: 770px;
+    text-align: center;
+    font-weight: 400;
+}
+.header-bottom-btn button{
+    border: none;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-size: 13px;
+    color: rgb(186,74,244);
+    font-weight: 500;
+}
+#btn-hover{
+    color: transparent;
+}
+#btn-hover:hover{
+    background: transparent;
+    outline: 1px solid white;
+    color: #0f0f0f;
+}
+.advantages{
+    display: flex;
+    justify-content: space-between;
+
+    column-gap: 30px;
+    padding: 65px 0;
+    text-align: center;
+}
+
+
+.advantages article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.advantages article span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background: #f4e8ff;
+    border-radius: 50%;
+    color: #7d29bb;
+    margin-bottom: 16px;
+}
+.advantages article h3{
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+}
+.advantages article p{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #575351;
+}
+.catalog{
+    display: flex;
+    flex-direction: column;
+    padding: 65px 0;
+    align-items: center;
+}
+.catalog-cards{
+    display: flex;
+    margin-bottom: 32px;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.card{
+    border: 1px solid #e5e5e5;
+    border-radius: 15px;
+    max-width: 350px;
+}
+.card:hover{
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+}
+.card img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 48px;
+}
+.catalog h2{
+    text-align: center;
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 16px;
+
+}
+.catalog > p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #5a5859;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.label{
+    font-size: 12px;
+    line-height: 16px;
+    color: #7d29bb;
+    text-transform: uppercase;
+
+
+}
+.card-text{
+    padding: 16px;
+}
+.card-text h3{
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+    margin:10px 0;
+}
+.card-text p{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom:20px;
+    color: #5a5859;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+.cost{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #7d29bb;
+}
+.instock{
+    font-size: 12px;
+    line-height: 26px;
+    color: #37a037;
+    margin-bottom: 20px;
+}
+.card-btn{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background: #7d29bb;
+    color: white;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.card-btn:hover{
+    background: #673ab7;
+}
+.catalog > button{
+    width: fit-content;
+    padding: 12px 24px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    background: #7d29bb;
+    color: #eaeaea;
+    cursor: pointer;
+    border: none;
+}
+.send{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #9810fa;
+    padding: 64px 0;
+}
+.send h2{
+    font-size: 36px;
+    line-height: 40px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.send p{
+    font-size: 18px;
+    line-height: 28px;
+    color: #f5e7fe;
+    margin-bottom: 32px;
+}
+.send button{
+    border: none;
+    background: white;
+    color: #9810fa;
+    border-radius: 7px;
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 20px;
+
+
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 288px;
+
+}
+.footer-top{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #101828;
+    padding: 80px 0;
+}
+.footer-top h3{
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: white;
+
+}
+.footer-social ul {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+.footer-top p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #d1d5dc;
+}
+.footer-top li a{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    margin-bottom: 8px;
+    color: #d1d5dc;
+}
+.footer-top li a:hover{
+    color: #9810fa;
+}
+.logo-tittle{
+    color: white;
+}
+.footer-bottom {
+    border-top: 1px solid #1f2937;
+    padding: 30px 0;
+    text-align: center;
+    background: #101828;
+    color: #94a3b8;
+    font-size: 14px;
+}
+.footer-top article div{
+    margin-bottom: 16px;
+
+}
