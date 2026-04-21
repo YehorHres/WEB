@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background: aliceblue;
+    color: black;
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    padding: 15px 5%;
+    align-items: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    column-gap: 350px;
+    background: rgba(239, 220, 223, 0.15);
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.logo span{
+    color: #eb7979;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    column-gap: 15px;
+}
+nav ul li a{
+    color: #3f3f3f;
+}
+.preview-box{
+    position: relative;
+    width: 100%;
+}
+.preview-box img{
+    width: 100%;
+}
+.status{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #fff;
+}
+.online{
+    background: #22ff34;
+}
+.offline{
+    background: #ff2f2c;
+}
+.info-alert{
+    position: relative;
+    top: -15px;
+    background: #ffbe4c;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #3f3f3f;
+}
+.btn-edit{
+    position: fixed;
+    bottom:30px;
+    right: 20px;
+    background: #4457ff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.card-grid{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.web-card{
+    background: #f6f2f2;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.card-info{
+    padding: 10px;
+}
